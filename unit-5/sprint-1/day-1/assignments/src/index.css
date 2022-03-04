@@ -1,0 +1,39 @@
+#container{
+    /* border: 1px solid black; */
+    width: 98%;
+    margin: auto;
+}
+#logo{
+    display: flex;
+    align-items: center;
+}
+#input{
+    width: 35%;
+    /* border: 1px solid black; */
+    text-align: center;
+}
+#input > input, button{
+    padding: 5px 20px;
+    width:42%;
+}
+
+.outputdiv{
+    display: flex;
+    /* border: 1px solid black; */
+    width:35%;
+    text-align: center;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom:10px;
+}
+
+.outputdiv > h3, h4{
+    /* border: 1px solid black; */
+    flex: 3;
+    height:20px;
+}
+.outputdiv > h4{
+    /* border: 1px solid black; */
+    flex: 1;
+    height:20px;
+}
