@@ -36,3 +36,32 @@
     transform: rotate(360deg);
   }
 }
+
+
+.GroceryInput >input,button {
+  padding: 5px 10px;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+#output{
+  width: 50%;
+  margin: auto;
+  /* height: 50px; */
+  margin-top: 50px;
+
+  /* border: 1px solid black; */
+}
+
+.box{
+  border-bottom: 1px solid black;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items:baseline;
+  font-size: 30px;
+}
+
+.size{
+  font-size: 20px;
+}
