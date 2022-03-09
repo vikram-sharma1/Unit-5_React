@@ -1,12 +1,23 @@
 import { useState } from "react";
 import GroceryInput from "./GroceryInput";
 import GroceryList from "./GroceryList";
+import { nanoid } from 'nanoid'
 
 function Grocery() {
   const [groceryData, setGroceryData] = useState([]);
 
   const addto = (data) => {
-    setGroceryData([...groceryData,data])
+
+    const toggle = {
+      id:nanoid(),
+      title : data,
+      status : false,
+    }
+    setGroceryData([...groceryData,toggle])
+  }
+
+  const deletgroc = (id) => {
+
   }
 
   return (
@@ -14,7 +25,7 @@ function Grocery() {
       <GroceryInput addto = {addto} />
         <div id="output">
             {groceryData.map((e) => (
-                <GroceryList value={e} />
+                <GroceryList value={e} key={e.id} />
         ))}</div>
       
     </div>

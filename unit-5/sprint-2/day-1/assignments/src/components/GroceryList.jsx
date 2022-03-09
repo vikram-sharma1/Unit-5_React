@@ -4,8 +4,9 @@ function GroceryList({value}) {
 
     return (
       <div className="box">
-       <div>{value}</div>
-       <div className="size">Delete</div>
+       {value.title} - {value.status ? "Done" : "Not Done"}
+       <button>Toggle</button>
+       <button>Delete </button>
       </div>
     );
   }

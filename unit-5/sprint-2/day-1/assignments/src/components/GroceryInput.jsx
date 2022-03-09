@@ -4,8 +4,6 @@ function GroceryInput({addto}) {
 
     const [text, setText] = useState()
 
-    
-
     return (
       <div className="GroceryInput">
         <input type="text" placeholder="Item name"
