@@ -1,0 +1,58 @@
+{
+  "employee": [
+    {
+      "name": "Rishabh Gupta",
+      "age": "25",
+      "address": "Wz 1598 G/1 Nangal Raya, New Delhi",
+      "department": "Management",
+      "salary": "20000",
+      "status": "single",
+      "id": 1
+    },
+    {
+      "name": "Shashank",
+      "age": "28",
+      "address": "Wz 1598 G/1 Nangal Raya, New Delhi",
+      "department": "Management",
+      "salary": "100000",
+      "status": "single",
+      "id": 2
+    },
+    {
+      "name": "Mohak",
+      "age": "24",
+      "address": "Hari nagar",
+      "department": "Technical",
+      "salary": "40000",
+      "status": "",
+      "id": 3
+    },
+    {
+      "name": "Nikhil",
+      "age": "23",
+      "address": "Dabri",
+      "department": "Finance",
+      "salary": "500000",
+      "status": "single",
+      "id": 4
+    },
+    {
+      "name": "abc",
+      "age": "25",
+      "address": "wz 1598 G/1 Nangal Raya",
+      "department": "Technical",
+      "salary": "500000",
+      "status": "single",
+      "id": 5
+    },
+    {
+      "name": "Vikram Sharma",
+      "age": "1",
+      "address": "mumbai",
+      "department": "Finance",
+      "salary": "1",
+      "status": "single",
+      "id": 6
+    }
+  ]
+}
