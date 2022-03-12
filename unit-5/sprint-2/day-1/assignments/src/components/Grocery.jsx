@@ -16,7 +16,15 @@ function Grocery() {
     setGroceryData([...groceryData,toggle])
   }
 
-  const deletgroc = (id) => {
+  const deletgroc = (data) => {
+
+    let x = groceryData.filter((e) => {
+        return e.id != data
+    })
+
+    // console.log(id)
+
+    setGroceryData([...x])
 
   }
 
@@ -25,7 +33,8 @@ function Grocery() {
       <GroceryInput addto = {addto} />
         <div id="output">
             {groceryData.map((e) => (
-                <GroceryList value={e} key={e.id} />
+                <GroceryList value={e} key={e.id}  value2 = {deletgroc} />
+
         ))}</div>
       
     </div>
