@@ -1,7 +1,13 @@
+import { useContext } from "react"
+import { CartContex } from "../../contexts/CartContext"
 
 
 export const Button = () => {
 
-    return <button>Add to cart</button>
+    const {handleChange} = useContext(CartContex)
+
+    return <button onClick={() => {
+        handleChange(1)
+    }}>Add to cart</button>
 
 }

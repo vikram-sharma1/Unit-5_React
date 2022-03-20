@@ -5,9 +5,9 @@ import { CartContex } from "../../contexts/CartContext"
 
 export const Cart = () => {
 
-    const value = useContext(CartContex)
+    const {cart} = useContext(CartContex)
 
 
-    return <h1>No. items in cart : {value} </h1>
+    return <h1>No. items in cart : {cart} </h1>
 
 }
