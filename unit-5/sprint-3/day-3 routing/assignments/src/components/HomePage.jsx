@@ -14,11 +14,14 @@ const [data, setData] = useState([])
 
  const getdata = () => {
   axios.get("http://localhost:3001/products").then((res)=>{
-    // setData([...])
-    console.log(res.data)
+    setData([...res.data])
+    
+    
   })
  }
+//  console.log(data)
 
+ 
   return (
     <>
       <div
@@ -29,10 +32,18 @@ const [data, setData] = useState([])
         }}
       >
         {/* Iterate over products and show links */}
-        {products.map((el) => {
-          // return <Link to={``}>{/* Show product image and name */}</Link>;
+        {data.map((el) => {
+          return <Link to={`/products/${el.id}`} key={el.id}>
 
-          return <h1>{el}</h1>
+
+
+          <div>
+            <h1>{el.name}</h1>
+            <img src={el.src} alt="hello" />
+          </div>
+          </Link>;
+
+          // return <h1>{el}</h1>
         })}
       </div>
     </>

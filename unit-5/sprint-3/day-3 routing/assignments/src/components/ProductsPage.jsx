@@ -1,8 +1,24 @@
-// import axios from "axios";
+import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 export const ProductsPage = () => {
+
+  const [data, setData] = useState([])
+
+  useEffect(()=>{
+    getdata()
+  },[])
+ 
+  const getdata = () => {
+   axios.get("http://localhost:3001/products").then((res)=>{
+     setData([...res.data])
+     
+     
+   })
+  }
+
+
   return (
     <>
       <div
@@ -19,7 +35,7 @@ export const ProductsPage = () => {
         <h4>Price</h4>
         <h4>Details</h4>
       </div>
-      {[].map((el) => {
+      {data.map((el) => {
         return (
           <div
             className="container"

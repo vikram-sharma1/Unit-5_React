@@ -3,21 +3,32 @@
        {
         "name" : "SmartPhone",
         "price": 30,
+        "src" : "https://i0.wp.com/www.smartprix.com/bytes/wp-content/uploads/2021/08/Samsung_Galaxy_Z_Fold_3_.png?resize=696%2C392&ssl=1",
         "id" : 0
     },
     {
         "name" : "Watch",
         "price" : 20,
+        "src" : "https://revolutionwatch.com/wp-content/uploads/2021/04/20-WW-Montblanc-2021.jpg",
         "id" : 1
     },
     {
         "name" : "Shirt",
         "price" : 50,
+        "src" : "https://5.imimg.com/data5/YX/OO/TA/ANDROID-108727015/product-jpeg-500x500.jpg",
         "id" : 2
     },
     {
         "name" : "Pants",
         "price" : 100,
+        "src":"https://www.realmenrealstyle.com/wp-content/uploads/2021/11/cargo-pants-for-men.jpg",
         "id" : 3
-    }]
+    },
+    {
+        "name" : "bikes",
+        "price" : 100,
+        "src":"https://images.hindustantimes.com/auto/img/2021/12/01/1600x900/New-Royal-Enfield-Bikes-in-2020_1608970324405_1608970342329_1638364395920.jpeg",
+        "id" : 4
+    }
+        ]
     }
