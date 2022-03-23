@@ -7,7 +7,7 @@ import { NotFoundPage } from "./NotFoundPage";
 export const ProductsDetailsPage = () => {
 
   const {id} = useParams()
-  console.log({id})
+  // console.log({id})
   
   const [product, setProduct] = useState({})
   const [found, setFound] = useState(true)
@@ -21,7 +21,7 @@ export const ProductsDetailsPage = () => {
  
   const getdata = () => {
    axios.get(`http://localhost:3001/products/${id}`).then((res)=>{
-     console.log("line 16",res.data)
+    //  console.log("line 16",res.data)
     setProduct(res.data)
     setFound(true)
      
@@ -31,7 +31,7 @@ export const ProductsDetailsPage = () => {
 
    })
   }
-  console.log("line 24" ,found)
+  // console.log("line 24" ,found)
 
   return (
     <>
