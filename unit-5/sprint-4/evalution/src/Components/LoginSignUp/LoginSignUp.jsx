@@ -1,4 +1,9 @@
 export const LoginSignUp = () => {
+
+  
+
+
+
   return (
     <div className="loginSignUp">
       <form className="signUp" onSubmit={(e) => { }}>

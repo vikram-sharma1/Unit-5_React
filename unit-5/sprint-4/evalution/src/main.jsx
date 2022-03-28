@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom'
 // import reportWebVitals from './reportWebVitals'
 import {Provider as ReduxProvider} from 'react-redux'
 import {store} from './Redux/store'
-import reportWebVitals from 'web-vitals'
+// import reportWebVitals from 'web-vitals'
 
 
 ReactDOM.render(
