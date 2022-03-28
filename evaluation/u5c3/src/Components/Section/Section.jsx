@@ -6,64 +6,141 @@ import { SortAndFilterButtons } from "../SortAndFilterButtons/SortAndFilterButto
 import styled from "styled-components";
 
 export const Section = () => {
-
-  const name = useParams()
-  console.log(name)
   
-  // you will receive section name from URL here.
-  // Get books for only this section and show
-  //   Everything else is same as Home page
-
-  const [data, setData] = useState([])
+  const {Section} = useParams();
+  const [book,setBook] =useState([])
 
   useEffect(()=>{
-    getdata()
-  },[])
+    getBook()
+  },[Section])
 
-  const getdata = () => {
+  const getBook = async () => {
+    try {
+      let res = await fetch(`http://localhost:8080/books`);
+      let data = await res.json();
+      filter(data);
+      // setArr([...data]);
+    } catch (e) {
+      console.log(e);
+    }
+  };
 
-    axios.get(`http://localhost:8080/${name.Section}`).then((res)=>{
-      setData([...res.data])
-      // console.log("line 27",data)
-    })
-  }
-
-  console.log("line 33",data)
+  function filter(ele){
+      let results = ele.filter((x) => {
+        // console.log(x.section);
+        if (x.section === Section) {
+          return x;
+        }
+      });
+      setBook([...results]);
+    }
 
   const Main = styled.div`
-  text-align:center;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-Align: center;
   `;
+
+function AscTitle(a,b){
+  if(a.title <b.title){
+    return -1;
+  }
+  if(a.title>b.title){
+    return 1;
+  }
+  return 0
+}
+
+const SortAscArticle=()=>{
+  let results = book.sort(AscTitle);
+  setBook([...results])
+};
+
+function DescTitle(a,b){
+  if(a.title <b.title){
+    return 1;
+  }
+  if(a.title>b.title){
+    return -1;
+  }
+  return 0
+}
+const SortDescArticle=()=>{
+  let results = book.sort(DescTitle);
+  setBook([...results])
+};
+
+function DescPrice(a,b){
+  if(+a.price <+b.price){
+    return 1;
+  }
+  if(+a.price>+b.price){
+    return -1;
+  }
+  return 0
+}
+const SortDescPrice=()=>{
+  let results = book.sort(DescPrice);
+  setBook([...results])
+};
+
+function AscPrice(a,b){
+  if(+a.price>+b.price){
+    return 1;
+  }
+  if(+a.price<+b.price){
+    return -1;
+  }
+  return 0
+}
+const SortAscPrice=()=>{
+  let results = book.sort(AscPrice);
+  setBook([...results])
+};
 
   return (
     <>
       <h2 style={{ textAlign: "center" }}>
         {
-         name.Section
+          Section
         }
       </h2>
-      {/* <SortAndFilterButtons handleSort={"give sorting function to component"} /> */}
+      <SortAndFilterButtons
+        handleSort={SortAscArticle}
+        class_name= {"sortByTitleAsc"}
+        buttonName= {"sortByTitleAsc"}
+      />
+      <SortAndFilterButtons
+        handleSort={SortDescArticle}
+        class_name= {"sortByTitleDesc"}
+        buttonName= {"sortByTitleDesc"}
+      />
+      <SortAndFilterButtons
+        handleSort={SortAscPrice}
+        class_name= {"sortByPriceAsc"}
+        buttonName= {"sortByPriceAsc"}
+      />
+      <SortAndFilterButtons
+        handleSort={SortDescPrice}
+        class_name= {"sortByPriceDesc"}
+        buttonName= {"sortByPriceDesc"}
+      />
 
-       <Main className="sectionContainer">
-        {/* SHow same BookCard component here, just like homepage but with books only belong to this Section */}
-        {
-      data.map((el) => {
-        return(
-          <BookCard
-          key={el.id}
-          id={el.id}
-          imageUrl={el.imageUrl}
-          title = {el.title}
-          price = {el.price}
-        />
-        )
-      })
-     }
-
-
-       </Main> 
+      <Main className="sectionContainer">
+      {
+        book.map((el)=>{
+          return(
+            <BookCard
+              key={el.id}
+              id={el.id}
+              imageUrl = {el.imageUrl}
+              title = {el.title}
+              price = {el.price}
+            />
+          );
+        })
+      }
+      </Main>
     </>
   );
 };

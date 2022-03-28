@@ -3,16 +3,15 @@ import styled from "styled-components";
 
 export const BookCard = ({ id, imageUrl, title, price }) => {
 
-  return (
-<Link to = {`/bookdetailspage/${id}`}>
-      <div>
+  return(
+    <Link to = {`/bookdetailspage/${id}`}>
+      <div className="bookCard">
         <h2>{title}</h2>
-        <img src={imageUrl} alt="" />
+        <img src = {imageUrl} alt="" />
         <h3>{price}</h3>
       </div>
-  </Link>
-  )
-
+    </Link>
+  );
   // Bookcard is a card looking component, that is also a 'Link' for react-router
   //  it's basically shows one books information.
   // You can style custom tags with styled components in following way:

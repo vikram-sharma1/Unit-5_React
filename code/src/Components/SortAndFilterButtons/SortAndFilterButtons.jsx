@@ -1,6 +1,12 @@
-export const SortAndFilterButtons = ({ handleSort,class_name,buttonName }) => {
+import styled from "styled-components"
+export const SortAndFilterButtons = ({ 
+  handleSort,
+  class_name,
+  buttonName,
+}) => {
+
   return (
-    <div className="sortButtons">
+    <div className="sortButtons" style={{display: 'flex', justifyContent: 'space-evenly'}}>
       {/*
         Create 4 sorting buttons here to sort by following criteria:
 
@@ -14,14 +20,7 @@ export const SortAndFilterButtons = ({ handleSort,class_name,buttonName }) => {
         and sort the data.
 
       */}
-
-      <button
-        onClick={()=>{
-          handleSort()
-
-        }}
-        className={class_name}
-      ></button>
+      <button className={class_name} onClick={handleSort}>{buttonName}</button>
     </div>
   );
 };

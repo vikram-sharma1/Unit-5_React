@@ -3,7 +3,7 @@ import { AllRoutes } from "./Routes/Routes";
 function App() {
   return (
     <div className="App">
-      <AllRoutes />
+      <AllRoutes/>
     </div>
   );
 }
