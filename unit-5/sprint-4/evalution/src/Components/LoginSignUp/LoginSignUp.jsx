@@ -27,11 +27,11 @@ export const LoginSignUp = () => {
       interests : interests,
       image : data.image
     }
-    axios.post("http://localhost:8080/user_data",users);
+    axios.post("http://localhost:8080/users",users);
     console.log("hello")
   
 
-  axios.get("http://localhost:8080/user_data").then((res)=>{
+  axios.get("http://localhost:8080/users").then((res)=>{
     console.log(res.data)
   }).catch((err)=>{
     console.log(err)
