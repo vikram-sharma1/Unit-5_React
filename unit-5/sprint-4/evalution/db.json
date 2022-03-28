@@ -1,162 +1,200 @@
 {
-    "users": [
-      {
-        "name": "Samuel",
-        "password": "secret",
-        "location": "bangalore",
-        "interests": [
-          "technology", 
-          "food", 
-          "movies", 
-          "culture",
-          "art", 
-          "drama"
-        ],
-        "image": "https://images.unsplash.com/photo",
-        "id": 1,
-        "subscribed": [1, 5] 
-      },
-      {
-        "name": "Vikram",
-        "password": "secret",
-        "location": "mumbai",
-        "interests": [
-          "technology", 
-          "food", 
-          "movies", 
-          "culture",
-          "art", 
-          "drama"
-        ],
-        "image": "https://images.unsplash.com/photo",
-        "id": 2,
-        "subscribed": [1, 5] 
-      },
-      {
-        "name": "tom",
-        "password": "secret",
-        "location": "bangalore",
-        "interests": [
-          "technology", 
-          "food", 
-          "movies", 
-          "culture",
-          "art", 
-          "drama"
-        ],
-        "image": "https://images.unsplash.com/photo",
-        "id": 3,
-        "subscribed": [1, 5] 
-      },
-      {
-        "name": "jerry",
-        "password": "secret",
-        "location": "Delhi",
-        "interests": [
-          "technology", 
-          "food", 
-          "movies", 
-          "culture",
-          "art", 
-          "drama"
-        ],
-        "image": "https://images.unsplash.com/photo",
-        "id": 4,
-        "subscribed": [1, 5] 
-      },
-      {
-        "name": "Santa",
-        "password": "secret",
-        "location": "Kolkata",
-        "interests": [
-          "technology", 
-          "food", 
-          "movies", 
-          "culture",
-          "art", 
-          "drama"
-        ],
-        "image": "https://images.unsplash.com/photo",
-        "id": 5,
-        "subscribed": [1, 5] 
-      },
-      {
-        "name": "Banta",
-        "password": "secret",
-        "location": "Kolkata",
-        "interests": [
-          "technology", 
-          "food", 
-          "movies", 
-          "culture",
-          "art", 
-          "drama"
-        ],
-        "image": "https://images.unsplash.com/photo",
-        "id": 6,
-        "subscribed": [1, 5] 
-      }
-    ],
-    "meetups": [
-        {
-          "id": 1,
-          "title": "Saunter Strech",
-          "location": "bangalore",
-          "date": "2022-03-25",
-          "time": "23:59",
-          "theme": "technology",
-          "description": "Random Event",
-          "image": "https://images.unsplash.com/photo"
-        },
-        {
-          "id": 2,
-          "title": "Santa",
-          "location": "Kolkata",
-          "date": "2022-03-25",
-          "time": "23:59",
-          "theme": "technology",
-          "description": "Random Event",
-          "image": "https://images.unsplash.com/photo"
-        },
-        {
-          "id": 3,
-          "title": "Banta",
-          "location": "Kolkata",
-          "date": "2022-03-25",
-          "time": "23:59",
-          "theme": "technology",
-          "description": "Random Event",
-          "image": "https://images.unsplash.com/photo"
-        },
-        {
-          "id": 4,
-          "title": "Jerry",
-          "location": "Delhi",
-          "date": "2022-03-25",
-          "time": "23:59",
-          "theme": "technology",
-          "description": "Random Event",
-          "image": "https://images.unsplash.com/photo"
-        },
-        {
-          "id": 5,
-          "title": "tom",
-          "location": "bangalore",
-          "date": "2022-03-25",
-          "time": "23:59",
-          "theme": "technology",
-          "description": "Random Event",
-          "image": "https://images.unsplash.com/photo"
-        },
-        {
-          "id": 6,
-          "title": "Vikram",
-          "location": "mumbai",
-          "date": "2022-03-25",
-          "time": "23:59",
-          "theme": "technology",
-          "description": "Random Event",
-          "image": "https://images.unsplash.com/photo"
-        }
+  "users": [
+    {
+      "name": "Samuel",
+      "password": "secret",
+      "location": "bangalore",
+      "interests": [
+        "technology",
+        "food",
+        "movies",
+        "culture",
+        "art",
+        "drama"
+      ],
+      "image": "https://images.unsplash.com/photo",
+      "id": 1,
+      "subscribed": [
+        1,
+        5
       ]
+    },
+    {
+      "name": "Vikram",
+      "password": "secret",
+      "location": "mumbai",
+      "interests": [
+        "technology",
+        "food",
+        "movies",
+        "culture",
+        "art",
+        "drama"
+      ],
+      "image": "https://images.unsplash.com/photo",
+      "id": 2,
+      "subscribed": [
+        1,
+        5
+      ]
+    },
+    {
+      "name": "tom",
+      "password": "secret",
+      "location": "bangalore",
+      "interests": [
+        "technology",
+        "food",
+        "movies",
+        "culture",
+        "art",
+        "drama"
+      ],
+      "image": "https://images.unsplash.com/photo",
+      "id": 3,
+      "subscribed": [
+        1,
+        5
+      ]
+    },
+    {
+      "name": "jerry",
+      "password": "secret",
+      "location": "Delhi",
+      "interests": [
+        "technology",
+        "food",
+        "movies",
+        "culture",
+        "art",
+        "drama"
+      ],
+      "image": "https://images.unsplash.com/photo",
+      "id": 4,
+      "subscribed": [
+        1,
+        5
+      ]
+    },
+    {
+      "name": "Santa",
+      "password": "secret",
+      "location": "Kolkata",
+      "interests": [
+        "technology",
+        "food",
+        "movies",
+        "culture",
+        "art",
+        "drama"
+      ],
+      "image": "https://images.unsplash.com/photo",
+      "id": 5,
+      "subscribed": [
+        1,
+        5
+      ]
+    },
+    {
+      "name": "Banta",
+      "password": "secret",
+      "location": "Kolkata",
+      "interests": [
+        "technology",
+        "food",
+        "movies",
+        "culture",
+        "art",
+        "drama"
+      ],
+      "image": "https://images.unsplash.com/photo",
+      "id": 6,
+      "subscribed": [
+        1,
+        5
+      ]
+    }
+  ],
+  "meetups": [
+    {
+      "id": 1,
+      "title": "Saunter Strech",
+      "location": "bangalore",
+      "date": "2022-03-25",
+      "time": "23:59",
+      "theme": "technology",
+      "description": "Random Event",
+      "image": "https://images.unsplash.com/photo"
+    },
+    {
+      "id": 2,
+      "title": "Santa",
+      "location": "Kolkata",
+      "date": "2022-03-25",
+      "time": "23:59",
+      "theme": "technology",
+      "description": "Random Event",
+      "image": "https://images.unsplash.com/photo"
+    },
+    {
+      "id": 3,
+      "title": "Banta",
+      "location": "Kolkata",
+      "date": "2022-03-25",
+      "time": "23:59",
+      "theme": "technology",
+      "description": "Random Event",
+      "image": "https://images.unsplash.com/photo"
+    },
+    {
+      "id": 4,
+      "title": "Jerry",
+      "location": "Delhi",
+      "date": "2022-03-25",
+      "time": "23:59",
+      "theme": "technology",
+      "description": "Random Event",
+      "image": "https://images.unsplash.com/photo"
+    },
+    {
+      "id": 5,
+      "title": "tom",
+      "location": "bangalore",
+      "date": "2022-03-25",
+      "time": "23:59",
+      "theme": "technology",
+      "description": "Random Event",
+      "image": "https://images.unsplash.com/photo"
+    },
+    {
+      "id": 6,
+      "title": "Vikram",
+      "location": "mumbai",
+      "date": "2022-03-25",
+      "time": "23:59",
+      "theme": "technology",
+      "description": "Random Event",
+      "image": "https://images.unsplash.com/photo"
+    },
+    {
+      "id": 7,
+      "title": "",
+      "location": "",
+      "date": "",
+      "time": "",
+      "theme": "",
+      "description": "",
+      "image": ""
+    },
+    {
+      "id": 8,
+      "title": "",
+      "location": "",
+      "date": "",
+      "time": "",
+      "theme": "",
+      "description": "",
+      "image": ""
+    }
+  ]
 }
