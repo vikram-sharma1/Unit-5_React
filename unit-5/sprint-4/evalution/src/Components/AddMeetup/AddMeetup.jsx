@@ -1,12 +1,19 @@
 // User should be able to add/create new meetups 
 
+
+
+
 export const AddMeetup = () => {
+
+
+
+
   return (
     <div className="addMeetupContainer">
       <form>
         <h1>Add Meetup</h1>
         <label>title</label>
-        <input type="text" className="title" onChange={() => { }} required />
+        <input type="text" className="title" onChange={() => {details}} required />
         <label>Location</label>
         <select value={""} className="location" onChange={(event) => { }}>
           <option value=""></option>
