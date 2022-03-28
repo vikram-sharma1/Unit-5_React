@@ -18,7 +18,7 @@ export const Forms =()=>{
     },[])
 
     const getData =()=>{
-        axios.get(`http://localhost:3125/employee`).then(res=>{
+        axios.get(`http://localhost:3125/employee`).then((res)=>{
             setData(res.data);
         })
     }
@@ -128,8 +128,12 @@ export const Forms =()=>{
 
                 <input type="submit" value="Submit data"></input>
             </form>
+
+
+
+
             <div>
-                {data.map(employee =>
+                {data.map((employee) =>
                     <div key={employee.id}>
                         <tr id="employee_list">
                             <th>{employee.name}</th>
