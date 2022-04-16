@@ -23,6 +23,10 @@ export const ProductsDetailsPage = () => {
    axios.get(`http://localhost:3001/products/${id}`).then((res)=>{
     //  console.log("line 16",res.data)
     setProduct(res.data)
+
+
+
+    
     setFound(true)
      
    }).catch((err)=>{

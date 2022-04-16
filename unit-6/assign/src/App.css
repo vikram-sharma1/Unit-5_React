@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+}
+
+.navbar{
+  /* border: 1px solid black; */
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.buttNav{
+  font-size: 25px;
+}
