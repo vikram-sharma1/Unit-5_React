@@ -18,7 +18,9 @@ export const AddCountry =()=>{
             <h1>Add Countries</h1>
             <form onSubmit={(e)=>handleSubmit(e)}>
             <label>Add Country</label>
+            <br />
             <input type="text" id={"country"} value={country.name} onChange={(e)=>setCountry(e.target.value)}></input>
+            <br />
             <input type="submit" value={"Enter"}></input>
         </form>
         </div>

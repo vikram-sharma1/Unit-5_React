@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
 import {Route, Routes} from 'react-router-dom'
-import {AddCountry} from "./components/AddCountry/addCountry"
-import {AddCity} from "./components/AddCity/addCity"
-import { Navbar } from "./components/Navbar/navbar";
-import {Home} from "./components/Hompage/Homepage"
-import {CityUpdate} from  "./components/update/cityupdate"
+import {AddCountry} from "./components/addCountry"
+import {AddCity} from "./components/addCity"
+import { Navbar } from "./components/navbar";
+import {Home} from "./components/Homepage"
+import {CityUpdate} from  "./components/cityupdate"
 function App() {
   return (
     <div className="App">

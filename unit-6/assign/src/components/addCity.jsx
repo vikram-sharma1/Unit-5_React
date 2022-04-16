@@ -56,13 +56,16 @@ export const AddCity=()=>{
             <h1>ADD CITY</h1>
             <form onSubmit={(e)=>handleSubmit(e)}>
                 <input type="text" id={"city"} onChange={(e)=>handleChange(e)} placeholder="Enter a City"/>
+                <br />
                 <input type="text" id={"population"} onChange={(e)=>handleChange(e)} placeholder="Enter a Population"/>
+                <br />
                 <select name="" id={"country"} onChange={(e)=>handleChange(e)}>
                     <option value="">Select</option>
                     {city.map((element)=>(
                         <option value={element.name}>{element.name}</option>
                     ))}
                 </select>
+                <br />
                 <input type="submit" value="Save Country"></input>
             </form>
         </div>

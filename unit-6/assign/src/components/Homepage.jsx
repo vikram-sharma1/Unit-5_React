@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import styled from "styled-components";
-import { CityTable } from "../Table/citytable";
+import { CityTable } from "./citytable";
 
 export const Home = () => {
   const [city, setCity] = useState([]);
