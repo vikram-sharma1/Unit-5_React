@@ -1,4 +1,16 @@
 {
-    "country" : [],
-    "city":[]
+  "city": [
+    {
+      "city": "Navi Mumbai",
+      "population": "486538465",
+      "country": "India",
+      "id": 1
+    }
+  ],
+  "country": [
+    {
+      "name": "India",
+      "id": 1
+    }
+  ]
 }
